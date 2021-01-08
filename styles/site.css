@@ -107,6 +107,11 @@ a {
   color: var(--accent-color);
 }
 
+a:hover,
+a:focus {
+  font-weight: bold;
+}
+
 .light {
   font-family: 'Roboto-Light';
 }
@@ -221,6 +226,11 @@ header {
 #home #short-bio h3 {
   margin-bottom: 15px;
 }
+
+/* #resume:hover,
+#resume:focus {
+  font-size: 1.1em;
+} */
 
 #home #socials {
   display: flex;
