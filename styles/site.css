@@ -104,6 +104,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--accent-color);
 }
 
 .light {
@@ -120,6 +121,10 @@ a {
 
 .hidden {
   display: none;
+}
+
+.hideme {
+  opacity: 0;
 }
 
 header {
@@ -237,7 +242,8 @@ header {
 }
 
 .primary,
-.secondary {
+.secondary,
+.tertiary {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -249,6 +255,10 @@ header {
 
 .secondary {
   background-color: var(--secondary-background-color);
+}
+
+.tertiary {
+  background-color: var(--accent-color);
 }
 
 .page-header {
@@ -402,22 +412,64 @@ header {
 #aboutme {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 75vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .aboutme-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  border: 1px solid black;
+  padding: 30px 100px;
+}
 
-  /* position: absolute; */
+.aboutme-img img {
+  width: 300px;
+  height: 300px;
+  transform: scale(1);
+  
+  border: 0.5px solid white;
+
+  position: relative;
+  z-index: 2;
+}
+
+.aboutme-img img:hover,
+.aboutme-img img:focus{
+  opacity: 0.25;
+  /* z-index: 0; */
+}
+
+.aboutme-img p {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: #FFFFFF;
+  color: #758173;
+  z-index: 1;
+  font-family: "roboto-Light";
 }
 
 .aboutme-text {
-  max-width: 1080px;
-  width: 100%;
-  border: 1px solid black;
+  color: #FEFEFE;
+  margin: 30px 100px 0px 100px;
+}
 
-  /* position: absolute; */
+.aboutme-text p {
+  margin-bottom: 15px;
+}
+
+.aboutme-text a {
+  color: #FEFEFE;
+  font-weight: bold;
 }
 
 footer {
