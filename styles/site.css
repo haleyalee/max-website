@@ -418,6 +418,10 @@ header {
   padding-bottom: 60px;
 }
 
+.dark .aboutme-text{
+  color: rgba(255,255,255,0.87);
+}
+
 .aboutme-img {
   display: flex;
   flex-direction: row;
