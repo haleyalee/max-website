@@ -35,7 +35,7 @@
     </div>
   </header>
 
-  <main id="start">
+  <main>
     
     <div id="back-to-top-button" onclick="topFunction()" >
       <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Home -->
-    <div id="home" class="page">
+    <div id="home" class="primary">
 
       <div id="name">
         <h3 class="light">Hello! I am</h3>
@@ -81,15 +81,18 @@
     </div>
 
     <!-- Experience -->
-    <div id="experience" class="page secondary">
-      <h1 class="accent title">experience</h1>
+    <div id="experience" class="secondary">
+      <div class="page-header">
+        <h1 class="accent title">experience</h1>
+      </div>
 
       <div class="container">
+        <!-- TODO: Fill in work experience companies  -->
         <div class="experience-header">
-          <h3 id="rise-header" class="work highlight">RISE Lab (2020)</h3>
-          <h3 id="amazon-header" class="work">Amazon (2020)</h3>
-          <h3 id="nlplogix-header" class="work">NLP Logix (2019)</h3>
-          <h3 id="revscripter-header" class="work">RevScripter (2019)</h3>
+          <h3 id="rise-header" class="highlight">RISE Lab (2020)</h3>
+          <h3 id="amazon-header">Amazon (2020)</h3>
+          <h3 id="nlplogix-header">NLP Logix (2019)</h3>
+          <h3 id="revscripter-header">RevScripter (2019)</h3>
         </div>
   
         <div class="experience-box">
@@ -166,11 +169,11 @@
     </div>
 
     <!-- Projects -->
-    <div id="projects" class="page">
-      <h1 class="accent title">projects</h1>
-
+    <div id="projects" class="primary">
+      <div class="page-header">
+        <h1 class="accent title">projects</h1>
+      </div>
       <div class="container">
-
         <div class="project">
           <img src="images/dataless.jpg" alt="Dataless Network Distillation">
           <div class="projects-text">
@@ -191,8 +194,11 @@
         <div class="project">
           <img src="images/spotifysep.jpg" alt="Spotify Instrument Separator">
           <div class="projects-text">
+            <!-- TODO: Fill in project name -->
             <h3>Spotify Instrument Separator</h3>
+            <!-- TODO: Fill in project duration -->
             <p style="margin-bottom: 20px;" class="light i">September 2020 - Present</p>
+            <!-- TODO: Fill in project information -->
             <p>project information</p>
             <ul>
               <li>Created pipeline to separate instruments in a given song. Compared different methods including ICA, ConvNets
@@ -204,8 +210,11 @@
         <div class="project">
           <img src="images/bearmaps.jpg" alt="Bear Maps">
           <div class="projects-text">
+            <!-- TODO: Fill in project name -->
             <h3>Bear Maps</h3>
+            <!-- TODO: Fill in project duration -->
             <p style="margin-bottom: 20px;" class="light i">April 2019</p>
+            <!-- TODO: Fill in project information -->
             <p>project information</p>
             <ul>
               <li>Implemented map rastering, routing with A*, and Trie-based autocomplete search in a Google Maps clone</li>
@@ -213,40 +222,21 @@
           </div>
         </div>
       </div>
-
-
-
-      <!-- Boxes design -->
-      <!-- <div class="container">
-        <div class="grid">
-
-          <div class="project card-a">
-            <h2>Dataless Network Distillation</h2>
-            <p class="light i">October 2020 - Present</p>
-          </div>
-
-          <div class="project card-b">
-            <h2>Spotify Instrument Separator </h2>
-            <p class="light i">September 2020 - Present</p>
-          </div>
-
-          <div class="project card-b">
-            <h2>CS170 Algorithms Tutor</h2>
-            <p class="light i">August 2020 - Present</p>
-          </div>
-
-          <div class="project card-a">
-            <h2>Bear Maps</h2>
-            <p class="light i">April 2019</p>
-          </div>
-        </div>
-      </div> -->
     </div>
 
     <!-- About Me -->
-    <!-- <div id="aboutme" class="page secondary">
-
-    </div> -->
+    <div id="aboutme" class="secondary">
+      <div class="page-header">
+        <h1 class="accent title">about me</h1>
+      </div>
+      <div class="container">
+        <div class="aboutme-img"> 
+        </div>
+        <div class="aboutme-text">
+          <h3>hello</h3>
+        </div>
+      </div>
+    </div>
 
   </main>
 
