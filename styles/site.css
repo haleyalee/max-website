@@ -46,8 +46,6 @@ body {
   margin: 0;
 
   transition: background, color, var(--transition-delay);
-  
-  /* padding: 0px 100px; */
 }
 
 .dark {
@@ -73,7 +71,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 30px;    
   /* border: 3px solid var(--background-color); */
 }
-
 
 h1 {
   font-size: 50px;
@@ -276,6 +273,7 @@ header {
   z-index: 100;
 
   position: relative;
+  
 }
 
 .title {
