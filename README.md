@@ -5,4 +5,3 @@
 - [ ] Link socials
 - [ ] Mobile responsive
 - [ ] Snap scroll
-- [ ] 
