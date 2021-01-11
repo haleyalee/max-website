@@ -1,23 +1,29 @@
-// const sunMoonContainer = document.querySelector('#toggle-mode')
-
-// document.querySelector('.circle').addEventListener('click', () => {
-//   document.body.classList.toggle('dark')
-//   console.log("clicked circle")
-//   // const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation'))
-//   // sunMoonContainer.style.setProperty('--rotation', currentRotation + 180)
-// })
-
 const origpos = $("#circle").offset();
-// console.log(origpos);
+
+var today = new Date();
+var hour = today.getHours();
+
+// 6AM - 5:59PM : light mode
+if (hour>=6 && hour<18) {
+  $("#start").removeClass("dark");
+  $("#sun").addClass("hidden");
+  $("#moon").removeClass("hidden");
+  $("#circle").css("transform", "translateX(calc(origpos-24px))");
+}
+// 6PM - 5:59AM : dark mode
+else {
+  $("#start").addClass("dark");
+  $("#sun").removeClass("hidden");
+  $("#moon").addClass("hidden");
+}
+
 
 $("#circle").on("click", function() {
-  // console.log("clicked circle")
   document.body.classList.toggle('dark')
 
   const pos = $("#circle").position();
-  // console.log(pos);
 
-  if(document.body.classList.contains('dark')) {
+  if (document.body.classList.contains('dark')) {
     $("#sun").addClass("hidden");
     $("#moon").removeClass("hidden");
     $("#circle").css("transform", "translateX(calc(origpos-pos))");
@@ -30,18 +36,3 @@ $("#circle").on("click", function() {
   
 
 });
-
-// $(document).ready(function(){
-//   $("#circle").click(function(){
-//       // $(".circle").animate({
-//       //     width: "toggle"
-//       // });
-
-//       if(document.body.classList.contains('dark')) {
-//         $("#circle").css("transform", "translateX(26px)");
-//       }
-//       else {
-//         $("#circle").css("transform", "translateX(26px)");
-//       }
-//   });
-// });
