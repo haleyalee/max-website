@@ -6,15 +6,15 @@ var hour = today.getHours();
 // 6AM - 5:59PM : light mode
 if (hour>=6 && hour<18) {
   $("#start").removeClass("dark");
-  $("#sun").addClass("hidden");
-  $("#moon").removeClass("hidden");
+  $("#sun").removeClass("hidden");
+  $("#moon").addClass("hidden");
   $("#circle").css("transform", "translateX(calc(origpos-24px))");
 }
 // 6PM - 5:59AM : dark mode
 else {
   $("#start").addClass("dark");
-  $("#sun").removeClass("hidden");
-  $("#moon").addClass("hidden");
+  $("#sun").addClass("hidden");
+  $("#moon").removeClass("hidden");
 }
 
 
